@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c35">
+  <meta name="description" content="Explore thoughtfully arranged Umrah journeys, with considered stays in Makkah and Madinah.">
+  <title>NUR Journeys | Umrah, thoughtfully arranged</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17231f;
+      --green: #173c35;
+      --green-light: #28574b;
+      --paper: #f8f7f2;
+      --white: #fff;
+      --line: #d9ded8;
+      --muted: #66716c;
+      --accent: #bc654b;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+    .site-header { height: 76px; padding: 0 7.2%; display: flex; align-items: center; justify-content: space-between; background: var(--paper); }
+    .wordmark { display: flex; align-items: center; gap: 11px; color: var(--green); font-size: 16px; font-weight: 700; letter-spacing: 1.5px; }
+    .mark { width: 31px; height: 31px; border: 1px solid #9b7448; border-radius: 50%; display: grid; place-items: center; font: 18px var(--serif); color: #9b7448; }
+    .header-nav { display: flex; align-items: center; gap: 34px; color: #39443f; font-size: 13px; }
+    .header-nav a:hover { color: var(--accent); }
+    .header-cta { padding: 12px 18px; background: var(--green); color: #fff; border-radius: 2px; font-weight: 600; }
+    .hero { min-height: min(690px, 78svh); height: 650px; max-height: 760px; position: relative; display: flex; align-items: center; background: #273b34 url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=2200&q=88") center 48% / cover no-repeat; color: white; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12, 27, 24, .82) 0%, rgba(12, 27, 24, .55) 47%, rgba(12, 27, 24, .08) 100%), linear-gradient(0deg, rgba(12, 27, 24, .3), transparent 35%); }
+    .hero-content { position: relative; width: min(1180px, 85.6%); margin: 0 auto; padding: 4px 0 30px; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: #e4c69a; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 27px; height: 1px; background: #e4c69a; }
+    h1 { max-width: 660px; margin: 22px 0 15px; font: 600 clamp(48px, 6.2vw, 78px)/1.06 var(--serif); letter-spacing: 0; }
+    .hero-copy { max-width: 470px; margin: 0; color: rgba(255,255,255,.83); font-size: 15px; line-height: 1.8; }
+    .hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 31px; }
+    .button-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border: 0; border-radius: 2px; background: #e3bd86; color: #1b2923; font-size: 12px; font-weight: 700; cursor: pointer; transition: background .2s, transform .2s; }
+    .button-primary:hover { background: #f0d3a8; transform: translateY(-2px); }
+    .text-link { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.65); font-size: 12px; font-weight: 600; }
+    .hero-note { position: absolute; right: 7.2%; bottom: 34px; color: rgba(255,255,255,.83); font-size: 11px; letter-spacing: .5px; }
+    .trust-row { min-height: 86px; padding: 18px 7.2%; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); background: var(--paper); }
+    .trust-item { display: flex; align-items: center; gap: 11px; color: #39443f; font-size: 12px; font-weight: 600; }
+    .trust-icon { width: 27px; height: 27px; display: grid; place-items: center; border: 1px solid #c8d0c9; border-radius: 50%; color: var(--green); font-size: 13px; }
+    .section { width: min(1180px, 85.6%); margin: 0 auto; padding: 79px 0 84px; }
+    .section-top { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 27px; }
+    .section-kicker { margin-bottom: 10px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
+    h2 { margin: 0; font: 600 40px/1.15 var(--serif); letter-spacing: 0; }
+    .section-intro { max-width: 385px; margin: 0 0 3px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .search-panel { display: grid; grid-template-columns: 1.15fr 1fr 1fr auto; align-items: end; gap: 0; padding: 19px 21px; background: #fff; border: 1px solid var(--line); }
+    .field { padding: 0 18px; border-right: 1px solid var(--line); }
+    .field:first-child { padding-left: 3px; }
+    .field label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; }
+    .field select { width: 100%; padding: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 13px; }
+    .search-panel .button-primary { margin-left: 17px; min-height: 44px; background: var(--green); color: white; }
+    .search-panel .button-primary:hover { background: var(--green-light); }
+    .search-status { min-height: 18px; margin: 10px 0 0; color: var(--green); font-size: 12px; }
+    .package-heading { margin: 53px 0 19px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .package-heading h3 { margin: 0; font: 600 23px var(--serif); }
+    .transport-tabs { display: flex; gap: 9px; }
+    .transport-tab { min-width: 138px; min-height: 52px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 2px; background: #fff; color: #4f5b55; text-align: left; cursor: pointer; }
+    .transport-tab strong { display: block; font-size: 12px; }
+    .transport-tab span { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; }
+    .transport-tab[aria-pressed="true"] { border: 2px solid var(--green); background: var(--green); color: #fff; }
+    .transport-tab[aria-pressed="true"] span { color: #dce9df; }
+    .transport-tab.bus-tab[aria-pressed="true"] { border-color: #a8783f; box-shadow: inset 0 -3px 0 #d7b477; }
+    .package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 21px; }
+    .package { min-width: 0; background: white; border: 1px solid #e5e7e2; transition: transform .2s, box-shadow .2s; }
+    .package:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(24,48,39,.08); }
+    .package[hidden] { display: none; }
+    .package-image { height: 194px; position: relative; background-position: center; background-size: cover; }
+    .image-one { background-image: url("https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=900&q=82"); }
+    .image-two { background-image: url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=900&q=82"); }
+    .image-three { background-image: url("https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=82"); }
+    .image-label { position: absolute; left: 14px; top: 14px; padding: 7px 10px; background: rgba(248,247,242,.94); color: var(--green); font-size: 9px; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .package-body { padding: 19px 19px 17px; }
+    .package-meta { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 10px; }
+    .package h4 { margin: 11px 0 8px; font: 600 22px var(--serif); }
+    .package-description { min-height: 39px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+    .package-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 17px; padding-top: 14px; border-top: 1px solid #e7e9e4; }
+    .price-label { color: var(--muted); font-size: 9px; }
+    .price { margin-top: 2px; color: var(--green); font-size: 16px; font-weight: 700; }
+    .price small { color: var(--muted); font-size: 9px; font-weight: 400; }
+    .inquire-link { color: var(--accent); font-size: 11px; font-weight: 700; }
+    .note-band { padding: 42px 7.2%; display: flex; align-items: center; justify-content: space-between; gap: 25px; background: var(--green); color: white; }
+    .note-band p { max-width: 710px; margin: 0; font: 500 25px/1.45 var(--serif); }
+    .note-band a { flex: 0 0 auto; padding: 13px 17px; border: 1px solid rgba(255,255,255,.54); border-radius: 2px; font-size: 11px; font-weight: 600; }
+    footer { min-height: 78px; padding: 22px 7.2%; display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--muted); font-size: 10px; }
+    @media (min-width: 1500px) { .hero-content, .section { width: min(1280px, 85.6%); } }
+    @media (max-width: 780px) {
+      .site-header { height: 68px; padding: 0 6%; }
+      .header-nav { gap: 17px; }
+      .header-nav a:not(.header-cta) { display: none; }
+      .hero { height: 590px; min-height: 590px; background-position: 58% center; }
+      .hero-content, .section { width: 88%; }
+      .hero-content { padding-bottom: 0; }
+      .hero::before { background: linear-gradient(90deg, rgba(12,27,24,.79), rgba(12,27,24,.28)), linear-gradient(0deg, rgba(12,27,24,.35), transparent 50%); }
+      .hero-note { right: 6%; font-size: 9px; }
+      .trust-row { padding: 18px 6%; flex-wrap: wrap; justify-content: flex-start; column-gap: 25px; row-gap: 13px; }
+      .trust-item { font-size: 10px; }
+      .section { padding: 62px 0; }
+      .search-panel { grid-template-columns: 1fr 1fr; gap: 18px 0; }
+      .field:nth-child(2) { border-right: 0; }
+      .search-panel .button-primary { margin-left: 15px; }
+      .package-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px) {
+      .wordmark { font-size: 14px; }
+      .header-cta { padding: 10px 12px; font-size: 11px; }
+      .hero { height: 570px; min-height: 570px; }
+      h1 { max-width: 370px; font-size: 51px; }
+      .hero-copy { max-width: 330px; font-size: 13px; }
+      .hero-actions { gap: 17px; }
+      .trust-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 10px; }
+      .trust-icon { width: 24px; height: 24px; flex: 0 0 24px; }
+      .section-top { display: block; }
+      h2 { font-size: 35px; }
+      .section-intro { margin-top: 12px; }
+      .search-panel { grid-template-columns: 1fr; gap: 16px; padding: 17px; }
+      .field, .field:first-child { padding: 0 0 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .search-panel .button-primary { margin: 0; }
+      .package-heading { margin-top: 39px; align-items: flex-start; flex-direction: column; }
+      .transport-tabs { width: 100%; }
+      .transport-tab { flex: 1; min-width: 0; }
+      .package-grid { grid-template-columns: 1fr; }
+      .package-image { height: 210px; }
+      .note-band { padding: 33px 6%; align-items: flex-start; flex-direction: column; }
+      .note-band p { font-size: 22px; }
+      footer { padding: 20px 6%; align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="NUR Journeys home"><span class="mark" aria-hidden="true">N</span><span>NUR JOURNEYS</span></a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#journeys">Journeys</a>
+      <a href="#our-approach">Our approach</a>
+      <a class="header-cta" href="#plan">Plan your Umrah</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow">A journey of a lifetime</div>
+        <h1 id="hero-title">Umrah,<br>thoughtfully arranged.</h1>
+        <p class="hero-copy">Make space for the moments that matter. We bring the details together, so you can focus on your journey.</p>
+        <div class="hero-actions">
+          <a class="button-primary" href="#journeys">Explore journeys</a>
+          <a class="text-link" href="#our-approach">The NUR difference</a>
+        </div>
+      </div>
+      <div class="hero-note">MAKKAH · MADINAH · YOUR JOURNEY</div>
+    </section>
+
+    <div class="trust-row" aria-label="Our service commitments">
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">✳</span>Carefully chosen stays</div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">↗</span>Clear, considered itineraries</div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">♡</span>Support at every step</div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">⌖</span>Makkah and Madinah</div>
+    </div>
+
+    <section class="section" id="journeys" aria-labelledby="journeys-title">
+      <div class="section-top">
+        <div>
+          <div class="section-kicker">Find your way</div>
+          <h2 id="journeys-title">A journey made for you.</h2>
+        </div>
+        <p class="section-intro">From a focused week away to a little more time to reflect, find a package that fits your plans.</p>
+      </div>
+
+      <form class="search-panel" id="journey-search">
+        <div class="field">
+          <label for="departure">Departing from</label>
+          <select id="departure" name="departure">
+            <option value="any">Choose your departure city</option>
+            <option>London</option><option>Birmingham</option><option>Manchester</option><option>Other city</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="month">When would you like to go?</label>
+          <select id="month" name="month">
+            <option value="flexible">I'm flexible</option>
+            <option>January – March</option><option>April – June</option><option>July – September</option><option>October – December</option><option>Ramadan</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="travelers">Who is travelling?</label>
+          <select id="travelers" name="travelers">
+            <option>1 traveller</option><option selected>2 travellers</option><option>3 travellers</option><option>4+ travellers</option>
+          </select>
+        </div>
+        <button class="button-primary" type="submit">Explore packages</button>
+      </form>
+      <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+
+      <div class="package-heading">
+        <h3>Thoughtful ways to travel</h3>
+        <div class="transport-tabs" role="group" aria-label="Choose how to travel">
+          <button class="transport-tab bus-tab" type="button" data-transport-filter="bus" aria-pressed="true"><strong>By bus</strong><span>Popular · Great value</span></button>
+          <button class="transport-tab" type="button" data-transport-filter="air" aria-pressed="false"><strong>By air</strong><span>Flights included</span></button>
+        </div>
+      </div>
+
+      <div class="package-grid" id="package-grid">
+        <article class="package" data-transport="bus">
+          <div class="package-image image-one" role="img" aria-label="The Prophet's Mosque in Madinah"><span class="image-label">Popular · By bus</span></div>
+          <div class="package-body">
+            <div class="package-meta"><span>7 nights · Coach</span><span>Makkah · Madinah</span></div>
+            <h4>The Essential</h4>
+            <p class="package-description">A meaningful week with coach travel and stays in both holy cities.</p>
+            <div class="package-footer"><div><div class="price-label">PACKAGE PRICE FROM</div><div class="price">£1,395 <small>/ person</small></div></div><a class="inquire-link" href="#plan" data-package="The Essential">Enquire&nbsp; ↗</a></div>
+          </div>
+        </article>
+        <article class="package" data-transport="bus">
+          <div class="package-image image-two" role="img" aria-label="The Kaaba at Masjid al-Haram"><span class="image-label">By bus · More time</span></div>
+          <div class="package-body">
+            <div class="package-meta"><span>10 nights · Coach</span><span>Makkah · Madinah</span></div>
+            <h4>The Reflection</h4>
+            <p class="package-description">More time in each city, with coach travel and considered hotel options.</p>
+            <div class="package-footer"><div><div class="price-label">PACKAGE PRICE FROM</div><div class="price">£1,795 <small>/ person</small></div></div><a class="inquire-link" href="#plan" data-package="The Reflection">Enquire&nbsp; ↗</a></div>
+          </div>
+        </article>
+        <article class="package" data-transport="bus">
+          <div class="package-image image-three" role="img" aria-label="An illuminated mosque courtyard"><span class="image-label">By bus · Room for everyone</span></div>
+          <div class="package-body">
+            <div class="package-meta"><span>12 nights · Coach</span><span>Makkah · Madinah</span></div>
+            <h4>The Family</h4>
+            <p class="package-description">A flexible coach itinerary with a little more time for travelling together.</p>
+            <div class="package-footer"><div><div class="price-label">PACKAGE PRICE FROM</div><div class="price">£2,050 <small>/ person</small></div></div><a class="inquire-link" href="#plan" data-package="The Family">Enquire&nbsp; ↗</a></div>
+          </div>
+        </article>
+        <article class="package" data-transport="air" hidden>
+          <div class="package-image image-two" role="img" aria-label="The Kaaba at Masjid al-Haram"><span class="image-label">By air · Direct journey</span></div>
+          <div class="package-body">
+            <div class="package-meta"><span>7 nights · Flights</span><span>Makkah · Madinah</span></div>
+            <h4>The Swift</h4>
+            <p class="package-description">A one-week itinerary with flights and carefully selected stays in both cities.</p>
+            <div class="package-footer"><div><div class="price-label">PACKAGE PRICE FROM</div><div class="price">£1,695 <small>/ person</small></div></div><a class="inquire-link" href="#plan" data-package="The Swift by Air">Enquire&nbsp; ↗</a></div>
+          </div>
+        </article>
+        <article class="package" data-transport="air" hidden>
+          <div class="package-image image-one" role="img" aria-label="The Prophet's Mosque in Madinah"><span class="image-label">By air · Extended stay</span></div>
+          <div class="package-body">
+            <div class="package-meta"><span>10 nights · Flights</span><span>Makkah · Madinah</span></div>
+            <h4>The Unhurried</h4>
+            <p class="package-description">Extra days for reflection, with flights and stays arranged between both cities.</p>
+            <div class="package-footer"><div><div class="price-label">PACKAGE PRICE FROM</div><div class="price">£2,095 <small>/ person</small></div></div><a class="inquire-link" href="#plan" data-package="The Unhurried by Air">Enquire&nbsp; ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="note-band" id="our-approach">
+      <p>Good planning gives you one less thing to think about. Let’s start with what matters most to you.</p>
+      <a href="#plan">Talk through your plans&nbsp; ↗</a>
+    </section>
+  </main>
+
+  <footer id="plan">
+    <a class="wordmark" href="#home"><span class="mark" aria-hidden="true">N</span><span>NUR JOURNEYS</span></a>
+    <span>Start a conversation about your Umrah journey: <a href="mailto:hello@nurjourneys.example">hello@nurjourneys.example</a></span>
+    <span>Package prices are illustrative and subject to availability.</span>
+  </footer>
+
+  <script>
+    const transportButtons = document.querySelectorAll(".transport-tab");
+    const packages = document.querySelectorAll(".package");
+    const status = document.querySelector("#search-status");
+
+    transportButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const transport = button.dataset.transportFilter;
+        transportButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        packages.forEach((item) => {
+          item.hidden = item.dataset.transport !== transport;
+        });
+      });
+    });
+
+    document.querySelector("#journey-search").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const departure = document.querySelector("#departure").value;
+      const month = document.querySelector("#month").value;
+      const travelers = document.querySelector("#travelers").value;
+      const cityText = departure === "any" ? "your preferred city" : departure;
+      const monthText = month === "flexible" ? "flexible dates" : month;
+      status.textContent = `Showing journeys to discuss for ${travelers.toLowerCase()}, departing from ${cityText}, with ${monthText.toLowerCase()}.`;
+      document.querySelector("#package-grid").scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    document.querySelectorAll("[data-package]").forEach((link) => {
+      link.addEventListener("click", () => {
+        const subject = encodeURIComponent(`Umrah enquiry: ${link.dataset.package}`);
+        link.href = `mailto:hello@nurjourneys.example?subject=${subject}`;
+      });
+    });
+  </script>
+</body>
+</html>
